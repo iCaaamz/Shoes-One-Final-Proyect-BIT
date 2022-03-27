@@ -1,0 +1,131 @@
+<body class="login-bg-mg ">
+  <!-- <body class="login-container">
+    <div class="container" id="container">
+      
+      <div class="form-container sign-in-container mb-4">
+        <form method="POST" action="#" class="form" id="login">
+          <h1 class="form__title">Inicio de Sección</h1>
+          <div class="form__input-group">
+            <label for="username">Correo eléctronico: </label>
+            <input
+              type="text"
+              class="form__input"
+              name="username"
+              id="username"
+              maxlength="20"
+              required
+            />
+          </div>
+          <div class="form__input-group">
+            <label for="pass">Contraseña: </label>
+            <input
+              type="password"
+              class="form__input"
+              name="pass"
+              id="pass"
+              maxlength="20"
+              required
+            />
+          </div>
+          
+          <p class="fs-4">o ingresa con:</p>
+          <div class="btn-container d-flex justify-content-center">
+              <div class="d-flex w-50 justify-content-center align-items-center">
+                <button type="button" class="btn btn-primary btn-floating mx-1b fs-5 btn-sm d-flex">
+                  <i class="fab fa-facebook-f"></i>
+                </button>
+              
+                <button type="button" class="btn btn-primary btn-floating mx-1 fs-5 btn-sm">
+                  <i class="fab fa-google"></i>
+                </button>
+              </div>
+          </div>
+          <div class="form__input-group mt-3">
+            <button type="submit" class="form__button">Ingresar</button>
+          </div>
+          <div class="m-2"><a href="">olvidé mi contraseña</a></div>
+        </form>
+        
+      </div>
+
+      <div class="overlay-container">
+        <div class="overlay">
+          <div class="overlay-panel overlay-right">
+            <h1>Hola, querido usuario</h1>
+            <p>Si no posees una cuenta, registrate en el siguiente botón</p>
+            <button class="ghost" id="signUp">Registrarse</button>
+          </div>
+        </div>
+      </div>
+      <div></div>
+    </div>
+
+    <script src="scripts/main.js"></script>
+  </body> -->
+
+
+  <section class="login-page w-100 d-flex justify-content-center align-items-center  flex-wrap">
+    
+      <!-- formsection -->
+      <div class="login-container d-flex ">
+        <div class="form-section " style="height: 600px; width: 350px; background-color: aliceblue;">
+          <!-- h1 class="fw-bold p-4 text-center" style="font-family: 'Montserrat', sans-serif;">Inicio de sesión<nav></nav></h1> -->
+          <form method="POST" action="#" class="form" #loginForm="ngForm">
+            <h1 class="form__title">Inicio de Sesión</h1>
+            <div class="form__input-group">
+              <label for="username">Correo eléctronico: </label>
+              <input
+                type="text"
+                class="form__input"
+                name="email"
+                #email="ngModel"
+                [(ngModel)]="userservice.selectedUser.email"
+                maxlength="40"
+                required
+              />
+            </div>
+            <div class="form__input-group">
+              <label for="pass">Contraseña: </label>
+              <input
+                type="password"
+                class="form__input"
+                name="password"
+                #password="ngModel"
+                [(ngModel)]="userservice.selectedUser.password"
+                maxlength="20"
+                required
+              />
+            </div>
+            
+            <p class="fs-4">o ingresa con:</p>
+            <div class="btn-container d-flex justify-content-center">
+                <div class="d-flex w-50 justify-content-center align-items-center">
+                  <button type="button" class="btn-icon btn-primary btn-floating mx-1b fs-5 btn-sm d-flex">
+                    <i class="fab fa-facebook-f"></i>
+                  </button>
+                
+                  <button type="button" class="btn-icon btn-primary btn-floating mx-1 fs-5 btn-sm">
+                    <i class="fab fa-google"></i>
+                  </button>
+                </div>
+            </div>
+            <div class="form__input-group mt-3">
+              <button type="submit" class="form__button" (click)="login(loginForm)">Ingresar</button>
+            </div>
+            <div class="m-2"><a href="">olvidé mi contraseña</a></div>
+          </form>
+        </div>
+        <!-- registersection -->
+        <div class="register-container d-flex align-items-center flex-column" style="height: 600px; width: 350px; background-color: aliceblue;">
+          <h1 class="fw-bold p-4 text-center text-light" style="font-family: 'Montserrat', sans-serif; margin-top: 5rem;">Hola, querido usuario<nav></nav></h1> 
+          <p class="px-5 text-center text-light">Si no posee una cuenta, ingrese al siguiente botón</p>
+          <div class="form__input-group mt-3">
+            <button type="submit" class="form__button" routerLink="/register">Registrate</button>
+          </div>
+        </div>
+        
+      </div>
+    
+  </section>
+
+</body>

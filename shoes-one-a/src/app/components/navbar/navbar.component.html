@@ -1,0 +1,73 @@
+<div class="bg-color">
+  <!--BARRA DE NAVEGACION INICIO-->
+  <header>
+    <nav
+      class="navbar navbar-expand-lg navbar-dark bg-navbar fixed-top shadow-0"
+    >
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Shoes-One</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-mdb-toggle="collapse"
+          data-mdb-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <i class="fas fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav w-50 ms-auto d-flex justify-content-end">
+            <div class="login-container d-flex" *ngIf="userservice.loggedIn()">
+              <div class="btn-group shadow-0">
+                <button
+                  type="button"
+                  class="btn btn-danger dropdown-toggle my-2"
+                  data-mdb-toggle="dropdown"
+                  aria-expanded="false"
+                  style="height: 35px"
+                >
+                  Tu cuenta
+                </button>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="/profile">Mi perfil</a></li>
+                  <li><a class="dropdown-item" href="#">Mis compras</a></li>
+                  <li>
+                    <a class="dropdown-item" href="#">Carrito de compras</a>
+                  </li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      href="/login"
+                      (click)="userservice.logOut()"
+                      >Cerrar sesion</a
+                    >
+                  </li>
+                </ul>
+              </div>
+
+              <p class="username-text nav-link mx-3 fs-4 d-flex justify-content-start" href="">
+                <strong class="user-text d-flex"
+                  >Hola!&nbsp;<div>{{ userservice.getDataFromToken().username }}</div></strong
+                >
+              </p>
+            </div>
+            <a class="nav-link mx-3 fs-5" href="/home">Inicio</a>
+            <a class="nav-link mx-3 fs-5" href="/catalog1">Catálogo</a>
+            <a class="nav-link mx-3 fs-5" href="/shoppinCard">Carrito</a>
+            <div
+              class="register-container d-flex"
+              *ngIf="!userservice.loggedIn()"
+            >
+              <a class="nav-link mx-3 fs-5" href="/login">Ingresa</a>
+              <a class="nav-link mx-3 fs-5" href="/register">Registrate</a>
+            </div>
+            <a class="nav-link mx-3 fs-5" href="/contact">Contacto</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+</div>

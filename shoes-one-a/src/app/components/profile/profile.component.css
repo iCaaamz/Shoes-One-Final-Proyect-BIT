@@ -1,0 +1,22 @@
+.active{
+    background-color: #f41823!important;
+}
+
+@media (max-width: 600px){
+    .info{
+        flex-direction: column;
+    }
+    .container{
+        margin-top: 2rem!important;
+        
+    }
+    .list-cotainer{
+        margin-top: 2rem!important;
+    }
+    .body{
+        height: 63rem!important;
+    }
+    .menu-container{
+        padding: 3rem!important;
+    }
+}

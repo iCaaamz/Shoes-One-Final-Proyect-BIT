@@ -1,0 +1,179 @@
+<body class="login-bg-mg">
+  <!-- <body>
+    <div class="container register-container" id="container">
+    
+      <div class="form-container sign-in-container mb-4">
+        <form  class="form" #userForm="ngForm">
+          <h1 class="form__title">Registro de usuario</h1>
+          <div class="form__input-group">
+            <label for="username">Nombre de usuario: </label>
+            <input
+              type="text"
+              class="form__input"
+              name="username"
+              #username="ngModel"
+              [(ngModel)]="userService.selectedUser.username"
+              maxlength="20"
+              required
+            />
+          </div>
+          <div class="form__input-group">
+            <label for="username">Correo eléctronico: </label>
+            <input
+              type="text"
+              class="form__input"
+              name="email"
+              #name="ngModel"
+              [(ngModel)]="userService.selectedUser.email"
+              maxlength="20"
+              required
+            />
+          </div>
+          <div class="form__input-group">
+            <label for="pass">Contraseña: </label>
+            <input
+              type="password"
+              class="form__input"
+              name="password"
+              
+              #password="ngModel"
+              [(ngModel)]="userService.selectedUser.password"
+              maxlength="20"
+              required
+            />
+          </div>
+          <div class="form__input-group">
+            <label for="pass">Confirmar contraseña: </label>
+            <input
+              type="password"
+              class="form__input"
+              name="Cpass"
+              #Cpass="ngModel"
+              [(ngModel)]="userService.selectedUser.confirmPassword"
+              maxlength="20"
+              required
+            />
+          </div>
+          
+          <p class="fs-4">o registrate con:</p>
+          <div class="btn-container d-flex justify-content-center">
+              <div class="d-flex w-50 justify-content-center align-items-center">
+                <button type="button" class="btn btn-primary btn-floating mx-1b fs-5 btn-sm d-flex">
+                  <i class="fab fa-facebook-f"></i>
+                </button>
+              
+                <button type="button" class="btn btn-primary btn-floating mx-1 fs-5 btn-sm">
+                  <i class="fab fa-google"></i>
+                </button>
+              </div>
+          </div>
+          <div class="form__input-group mt-3">
+            <button type="submit" class="form__button" (click)="register(userForm)">Registrate</button>
+          </div>
+        </form>
+      </div>
+
+      
+
+      <div class="overlay-container">
+        <div class="overlay">
+          <div class="overlay-panel overlay-right">
+            <h1>Querido usuario</h1>
+            <p>Si ya posee una cuenta, ingresa en el siguiente botón</p>
+            <button class="ghost" id="signUp">Ingresar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="scripts/main.js"></script>
+  </body> -->
+
+  <section class="login-page w-100 d-flex justify-content-center align-items-center flex-wrap">
+    
+    <!-- formsection -->
+    <div class="login-container d-flex">
+      <div class="form-section " style="height: 730px; width: 350px; background-color: aliceblue;">
+        <!-- h1 class="fw-bold p-4 text-center" style="font-family: 'Montserrat', sans-serif;">Inicio de sesión<nav></nav></h1> -->
+        <form  class="form" #userForm="ngForm">
+          <h1 class="form__title">Registro de usuario</h1>
+          <div class="form__input-group">
+            <label for="username">Nombre de usuario: </label>
+            <input
+              type="text"
+              class="form__input"
+              name="username"
+              #username="ngModel"
+              [(ngModel)]="userService.selectedUser.username"
+              maxlength="20"
+              required
+            />
+          </div>
+          <div class="form__input-group">
+            <label for="username">Correo eléctronico: </label>
+            <input
+              type="text"
+              class="form__input"
+              name="email"
+              #name="ngModel"
+              [(ngModel)]="userService.selectedUser.email"
+              maxlength="40"
+              required
+            />
+          </div>
+          <div class="form__input-group">
+            <label for="pass">Contraseña: </label>
+            <input
+              type="password"
+              class="form__input"
+              name="password"
+              
+              #password="ngModel"
+              [(ngModel)]="userService.selectedUser.password"
+              maxlength="20"
+              required
+            />
+          </div>
+          <div class="form__input-group">
+            <label for="pass">Confirmar contraseña: </label>
+            <input
+              type="password"
+              class="form__input"
+              name="Cpass"
+              #Cpass="ngModel"
+              [(ngModel)]="userService.selectedUser.confirmPassword"
+              maxlength="20"
+              required
+            />
+          </div>
+          
+          <p class="fs-4">o registrate con:</p>
+          <div class="btn-container d-flex justify-content-center">
+              <div class="d-flex w-50 justify-content-center align-items-center">
+                <button type="button" class="btn-icon btn-primary btn-floating mx-1b fs-5 btn-sm d-flex">
+                  <i class="fab fa-facebook-f"></i>
+                </button>
+              
+                <button type="button" class="btn-icon btn-primary btn-floating mx-1 fs-5 btn-sm">
+                  <i class="fab fa-google"></i>
+                </button>
+              </div>
+          </div>
+          <div class="form__input-group mb-3">
+            <button type="submit" class="form__button m-3" (click)="register(userForm)" routerLink="/login">Registrate</button>
+          </div>
+        </form>
+      </div>
+      <!-- registersection -->
+      <div class="register-container d-flex align-items-center flex-column mb-5" style="height: 730px; width: 350px; background-color: aliceblue;">
+        <h1 class="fw-bold p-4 text-center text-light" style="font-family: 'Montserrat', sans-serif; margin-top: 9rem;">Hola, querido usuario<nav></nav></h1> 
+        <p class="px-5 text-center text-light">Si ya posee una cuenta, ingrese con el siguiente botón</p>
+        <div class="form__input-group mt-3">
+          <button type="submit" class="form__button" routerLink="/login">Ingresa</button>
+        </div>
+      </div>
+      
+    </div>
+  
+</section>
+</body>

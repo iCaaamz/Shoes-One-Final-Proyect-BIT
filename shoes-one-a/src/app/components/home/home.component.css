@@ -1,0 +1,174 @@
+.body{
+    background: #e1e1e1;
+    height: 100%;
+    width: 100%;
+}
+
+
+.bg-banner{
+    width: 100%;
+    height: 600px;
+    background-image: url('../../../assets/img/Disfruta-de-nuestro.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-y: bottom;
+}
+
+.para-ellos{
+    background-image: url(../../../assets/img/para_ellos.jpg);
+    width: 100%;
+    height: 630px;
+    background-size: 86%;
+    background-position-x: -110%;
+    background-position-y: 30%;
+}
+
+.ellos-f{
+    font-size: 10rem;
+    color: #f41823;
+}
+
+.para-ellas{
+    background-image: url(../../../assets/img/para_ellas.jpg);
+    width: 100%;
+    height: 630px;
+    background-size: 86%;
+    background-position-x: 186%;
+    background-position-y: 18%;
+}
+
+.ellas-f{
+    font-size: 10rem;
+    color: #f41823; 
+}
+
+
+/* CARD */
+
+
+.card{
+    margin: 1rem;
+}
+.card-body{
+    background-color: #f41823;
+    height: 230px;
+}
+
+.card-img-top{
+    height: 250px;
+}
+
+.btn-car{
+    height: 30px;
+}
+
+/* que buscas? */
+.qb-f{
+    font-size: 5rem;
+}
+
+.qb-container{
+    width: 100%;
+    
+}
+
+.bg1, .bg2, .bg3, .bg4{
+    width: 50%;
+    height: 800px;
+
+}
+
+
+
+@media (max-width: 600px) {
+    .ellos-f{
+        font-size: 5rem;
+        color: #f41823;
+    }
+    .ellas-f{
+        font-size: 5rem;
+        color: #f41823; 
+    }
+
+    .para-ellos{
+        background-image: url(../../../assets/img/para_ellos.jpg);
+        width: 100%;
+    height: 630px;
+    background-size: 259%;
+    background-position-x: 24%;
+    background-position-y: 30%;
+    background-repeat: no-repeat;
+    }
+    .para-ellas{
+    background-image: url('../../../assets/img/para_ellas.jpg');
+    width: 100%;
+    height: 630px;
+    background-size: 213%;
+    background-position-x: 50%;
+    background-position-y: 5%;
+    height: 500px;
+    }
+
+
+    /* CARD */
+    .carousel-container{
+        height: 1700px;
+    }
+    
+    .card-img-top{
+        height: 255px;
+        width: 100%;
+    }
+
+.card-body{
+    background-color: #f41823;
+    height: 230px;
+    width: 100%;
+}
+
+.card{
+    margin: 1px;
+    height: 397px;
+}
+
+.card-title{
+    font-size: 20px;
+}
+.card-subtitle{
+    font-size: 15px
+}
+
+.card-text{
+    font-size: 10px;
+}
+
+.carousel-item{
+    display: flex;
+    flex-direction: column;
+}
+
+/* CARD */
+
+.qb-container{
+    display: flex;
+    flex-direction: column;
+}
+
+.bg-1, .bg-2, .bg-3 .bg-4{
+    width: 100%;
+}  
+
+.bg-banner{
+    width: 100%;
+    height: 600px;
+    background-image: url('../../../assets/img/Disfruta-de-nuestro-responsive.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-y: bottom;
+    background-position-x: center ;
+}
+
+
+
+
+}

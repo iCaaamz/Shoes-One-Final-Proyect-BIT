@@ -1,0 +1,33 @@
+.fondo{
+    background-color: #111b1e;
+}
+
+.base{
+    display: flex;
+    justify-content: center;
+    padding-top: 5%;
+    height: 1160px;
+}
+
+.subfondo{
+    background-color: #e1e1e1;
+    height: 97%;
+    width: 70%;
+    
+}
+
+.contactanos{
+    display: flex;
+    justify-content: center;
+}
+
+.form-container{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.btn{
+    background-color: #f41823;
+}
+

@@ -1,0 +1,330 @@
+/* You can add global styles to this file, and also import other style files */
+
+  *{
+    font-family: 'Montserrat', sans-serif;
+   
+}
+
+
+.bg-color {
+  background-color: #111b1e;
+}
+
+.bg-navbar {
+  background: rgb(17,27,30);
+background: linear-gradient(0deg, rgba(17,27,30,0) 7%, rgba(0,0,0,0.8295693277310925) 100%);
+}
+
+.navbar{
+ border: none;
+}
+
+.font-banner {
+  font-size: 150px;
+}
+
+.bg-image1-s1 {
+  background-image: url("assets/img/image1.3.jpg");
+  background-repeat: no-repeat;
+  background-size: 110%;
+  background-position-y: 5%;
+  height: 500px;
+  transition: background-size 1s;
+}
+
+.bg-image1-s1:hover {
+  background-size: 130%;
+}
+
+@media (max-width: 600px) {
+  .bg-image1-s1 {
+    background-position-x: 74%;
+    background-position-y: 99%;
+    background-size: 79rem;
+    height: 539px;
+  }
+
+  .bg-image1-s1:hover {
+    background-size: 79rem;
+  }
+}
+
+.text1-image {
+  width: 47%;
+  height: 300px;
+  background-image: url("assets/img/image1.jpg");
+  background-size: cover;
+  background-position-x: 50%;
+}
+
+@media (max-width: 600px) {
+  .text1-image {
+    width: 100%;
+  }
+}
+
+@media (max-width: 600px) {
+  .font-banner {
+    font-size: 70px;
+  }
+}
+
+.title1 {
+  width: 60%;
+  height: 120px;
+  background-color: #f41823;
+}
+
+@media (max-width: 600px) {
+  .title1 {
+    padding: 1rem;
+    width: 100%;
+  }
+}
+
+.text1-content {
+  width: 750px;
+  height: 300px;
+  text-align: justify;
+}
+
+@media (max-width: 600px) {
+  .text1-content {
+    margin: 0 0 0 0;
+    height: 426px;
+  }
+}
+
+.line {
+  height: 5px;
+  width: 200px;
+  background-color: #f41823;
+}
+
+/* seccion2 */
+
+@media (max-width: 600px) {
+  .c-img1 {
+    height: 280px;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+}
+
+@media (max-width: 600px) {
+  .c-img2 {
+    height: 280px;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+}
+
+@media (max-width: 600px) {
+  .c-img3 {
+    height: 280px;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+}
+
+/* seccion3 */
+
+.section3 {
+  width: 100%;
+  height: 800px;
+  background-color: black;
+  transition: background-color 0.3s;
+}
+
+.section3:hover {
+  background-color: #e1e1e1;
+}
+
+@media (max-width: 600px) {
+  .section3 {
+    height: 1053px;
+    background-color: #e1e1e1;
+  }
+}
+
+.title-section3 {
+  font-size: 100px;
+  color: black;
+}
+
+@media (max-width: 600px) {
+  .title-section3 {
+    font-size: 40px;
+  }
+}
+
+.logo-container {
+  height: 500px;
+}
+
+.logo1 {
+  background-image: url("assets/img/nikelogo.png");
+  background-size: 95%;
+  background-repeat: no-repeat;
+  background-position-x: 50%;
+  background-position-y: 50%;
+  height: 300px;
+  width: 300px;
+}
+
+.logo2 {
+  background-image: url("assets/img/jordanlogo.png");
+  background-size: 95%;
+  background-repeat: no-repeat;
+  background-position-x: 50%;
+  background-position-y: 50%;
+  height: 300px;
+  width: 300px;
+}
+
+.logo3 {
+  background-image: url("assets/img/adidaslogo.png");
+  background-size: 95%;
+  background-repeat: no-repeat;
+  background-position-x: 50%;
+  background-position-y: 36%;
+  height: 300px;
+  width: 300px;
+}
+
+.line2 {
+  height: 5px;
+  width: 500px;
+  background-color: #f41823;
+}
+
+@media (max-width: 600px) {
+  .line2 {
+    height: 5px;
+    width: 200px;
+    background-color: #f41823;
+  }
+}
+
+/* seccion4 */
+
+.blackground1 {
+  background-color: #e1e1e1;
+  width: 100%;
+  height: 800px;
+  transition: background-color 0.3s;
+}
+
+@media (max-width: 600px) {
+  .blackground1 {
+    background-color: black;
+    width: 100%;
+    height: 800px;
+    transition: background-color 0.3s;
+  }
+}
+
+.blackground1:hover {
+  background-color: black;
+}
+
+.Tittleend {
+  color: #e1e1e1;
+  font-size: 60px;
+  padding-top: 75px;
+  height: 200px;
+}
+
+@media (max-width: 600px) {
+  .Tittleend {
+    color: #e1e1e1;
+    font-size: 25px;
+    padding-top: 75px;
+    height: 150px;
+    text-align: center;
+  }
+}
+
+.btn1 {
+  width: 150px;
+  height: 150px;
+}
+
+.icon-container {
+  width: 100%;
+  height: 500px;
+}
+
+@media (max-width: 600px) {
+  .icon-container {
+    width: 100%;
+    height: 550px;
+    flex-direction: column;
+    margin: 2rem 0 2rem 0;
+    gap: 4rem;
+  }
+}
+
+.btn {
+  width: 180px;
+  height: 60px;
+}
+
+.buton-container {
+  width: 100%;
+  height: 700px;
+}
+
+.btns5 {
+  background-image: url("assets/img/jordan.jpg");
+  background-size: 100%;
+  transition: background-size 1s;
+}
+
+@media (max-width: 600px) {
+  .btns5 {
+    background-size: 150%;
+    background-repeat: no-repeat;
+    background-size: 320%;
+  }
+}
+
+.blackground2 {
+  background-color: black;
+  width: 100%;
+  height: 910px;
+  transition: background-color 0.3s;
+}
+
+.blackground2:hover {
+  background-color: #e1e1e1;
+  height: 1000px;
+}
+
+@media (max-width: 600px) {
+  .blackground2 {
+    background-color: #e1e1e1;
+    width: 100%;
+    height: 1000px;
+    transition: background-color 0.3s;
+  }
+}
+
+.Tittleend1 {
+  color: black;
+  font-size: 76px;
+  padding-top: 75px;
+  height: 150px;
+  text-align: center;
+}
+
+@media (max-width: 600px) {
+  .Tittleend1 {
+    color: black;
+    font-size: 30px;
+    padding-top: 75px;
+    height: 150px;
+    text-align: center;
+    margin: rem;
+  }
+}

@@ -1,0 +1,28 @@
+@media (max-width: 600px) {
+
+	.navbar{
+        position: static;
+    }
+
+  .btn{
+    width: 166px;
+    }
+  .login-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    
+  }
+
+  .register-container{
+    display: flex;
+    flex-direction: column;
+  }
+ 	
+
+  .user-text{
+    flex-direction: column;
+  }
+}
+
+  
